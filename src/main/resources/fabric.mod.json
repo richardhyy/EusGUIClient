@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "eusgui",
+  "version": "${version}",
+  "name": "EusGUI",
+  "description": "",
+  "authors": [
+    "EucalyptusLeaves"
+  ],
+  "contact": {
+    "website": "www.eumc.cc"
+  },
+  "license": "MIT",
+  "icon": "assets/EusGUI/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "cc.eumc.eusgui.client.EusGUIClient"
+    ],
+    "main": [
+      "cc.eumc.eusgui.EusGUI"
+    ]
+  },
+  "mixins": [
+    "EusGUI.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.1",
+    "fabric": "*",
+    "minecraft": "1.18.1"
+  }
+}
